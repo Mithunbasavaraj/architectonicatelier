@@ -13,7 +13,7 @@
  */
 @media screen and (max-width: 600px) {
   :root {
-    --header-height: 100px;
+    --header-height: 80px;
     --header-height-min: 80px;
   }
 }
@@ -839,7 +839,7 @@ fieldset[disabled] a.btn {
   position: relative;
 }
 .section-title {
-  font-size: 3.2em;
+  font-size: 3em;
   line-height: 1;
   font-weight: 900;
 }
@@ -1143,7 +1143,7 @@ header .main-logo img {
   padding: 0 20px;
 }
 header.sticky .side-nav-bar .menu-btn {
-  margin: 0 40px;
+  margin: 0 20px;
 }
 header.sticky #navbar ul.dropdown-menu {
   top: var(--header-height-min);
@@ -1161,7 +1161,7 @@ header.sticky #navbar ul.menu-list > li > a {
 /* - Search Form hover Effects
 ------------------------------------------------------------- */
 #header-wrap .action-menu {
-  display: flex;
+  display: none;
   align-items: baseline;
   margin-right: 70px;
 }
@@ -1233,6 +1233,9 @@ header.sticky #navbar ul.menu-list > li > a {
   #header-wrap .action-menu .search-bar {
     display: none;
   }
+  #header-wrap .action-menu {
+    display: flex;
+  }
 }
 @media screen and (max-width: 575px) {
   #header-wrap .action-menu .search-bar {
@@ -1285,7 +1288,7 @@ header.sticky #navbar ul.menu-list > li > a {
   top: 0;
   right: 0;
   width: 20px;
-  height: 26px;
+  height: 43px;
   z-index: 3;
   cursor: pointer;
   transition: 0.5s all ease-out;
@@ -1574,8 +1577,8 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 .main-slider .banner-content h2.banner-title {
   font-family: var(--heading-font);
-  font-size: 5.5em;
-  font-weight: 900;
+  font-size: 5em;
+  font-weight: 800;
   color: #fff;
   text-transform: uppercase;
 }
@@ -1702,6 +1705,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 .services-item p {
   line-height: 2;
+  text-align: justify;
 }
 
 @media only screen and (max-width: 1199px) {
