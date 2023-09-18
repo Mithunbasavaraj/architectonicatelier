@@ -1048,7 +1048,7 @@ This is main CSS file that contains custom style rules used in this template
 header {
   position: absolute;
   top: 0;
-  z-index: 10;
+  z-index: 100;
   width: 100%;
   height: var(--header-height);
   transition: 0.3s all ease-out;
@@ -2367,4 +2367,22 @@ footer#footer {
   height: 68px;
   object-fit: cover;
   margin-bottom: 5px;
+}
+
+.swiper-pagination {
+  margin-top: 50px;
+  position: relative;
+  z-index: 1 !important;
+}
+.swiper-pagination .swiper-pagination-bullet,
+.swiper-pagination .swiper-pagination-bullet {
+  width: 12px;
+  height: 12px;
+  background-color: #fff;
+  opacity: 1;
+  border: 1px solid #879b88;
+}
+.swiper-pagination .swiper-pagination-bullet-active,
+.swiper-pagination .swiper-pagination-bullet-active {
+  background-color: #879b88;
 }

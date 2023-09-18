@@ -15,6 +15,7 @@
 	    <link rel="stylesheet" type="text/css" href="icomoon/icomoon.css">
 	    <link rel="stylesheet" type="text/css" href="css/vendor.css">
 	    <link rel="stylesheet" type="text/css" href="style.css">
+		<link href="js/swiper/swiper-bundle.min.css" rel="stylesheet" />
 
 		<!-- script
 		================================================== -->
@@ -51,15 +52,7 @@
 						<li class="scrollspy-link"><a href="#services" data-target="services" class="nav-link smoothscroll">Services</a></li>
 						<li class="scrollspy-link"><a href="#contact" data-target="contact" class="nav-link smoothscroll">Contact</a></li>
 						<li class="scrollspy-link"><a href="#testimonial" data-target="testimonial" class="nav-link smoothscroll">Testimonials</a></li>
-						<li class="scrollspy-link nav-item dropdown">
-							<a href="#" data-bs-toggle="dropdown" aria-expanded="false" class="nav-link dropdown-toggle">Pages</a>
-							<ul class="dropdown-menu">
-								<li><a href="styles.html" class="dropdown-item">Styles</a></li>
-								<li><a href="blog.html" class="dropdown-item">Blog</a></li>
-								<li><a href="single-post.html" class="dropdown-item">Single Post</a></li>
-								<li><a href="contact.html" class="dropdown-item">Contact us</a></li>
-							</ul>
-						</li>
+						
 						<!-- <span class="scrollspy-indicator"></span> -->
 					</ul>
 			</div>
@@ -527,15 +520,32 @@
 						</div>
 						<h2 class="section-title">Testimonials</h2>
 					</div>
-					<div class="testimonials-inner">
-						<q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat venenatis tempor, turpis dolor. Aliquam faucibus velit, volutpat vulputate risus urna enim.</q>
-						<div class="testimonial-author">
-							<div class="author-detail">
-								<div class="name">Lucifer</div>
-								<div class="author-title">CEO, unity real state</div>
+					<div class="testimonials-slider swiper">
+						<div class="swiper-wrapper">
+							<div class="swiper-slide testimonials-inner ">
+								<q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat venenatis tempor, turpis dolor. Aliquam faucibus velit, volutpat vulputate risus urna enim.</q>
+								<div class="testimonial-author">
+									<div class="author-detail">
+										<div class="name">Lucifer</div>
+										<div class="author-title">CEO, unity real state</div>
+									</div>
+								</div>
+							</div>
+
+
+							<div class="swiper-slide testimonials-inner ">
+								<q>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Placerat venenatis tempor, turpis dolor. Aliquam faucibus velit, volutpat vulputate risus urna enim.</q>
+								<div class="testimonial-author">
+									<div class="author-detail">
+										<div class="name">Lucifer</div>
+										<div class="author-title">CEO, unity real state</div>
+									</div>
+								</div>
 							</div>
 						</div>
 					</div>
+					<div class="swiper-pagination mt-5"></div>
+					
 				</div><!--reviews-content-->
 
 			</div>
@@ -658,10 +668,12 @@
 	</div>
 </div>
 
+<script src="js/swiper/swiper-bundle.min.js"></script>
 <script src="js/jquery-3.2.1.min.js"></script>
 <script src="js/ui-easing.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/script.js"></script>
+
 
 </body>
 </html>	
