@@ -696,9 +696,9 @@ fieldset[disabled] a.btn {
 /* button with line */
 .btn-with-line {
   color: #fff;
-  position: relative;
+  /* position: relative; */
 }
-.btn-with-line:after {
+/* .btn-with-line:after {
   content: "";
   position: absolute;
   top: 8px;
@@ -707,13 +707,17 @@ fieldset[disabled] a.btn {
   width: 50%;
   z-index: 9;
   transition: 0.3s ease-out;
-}
+} */
 .btn-with-line:hover {
   color: #fff;
 }
 .btn-with-line:hover:after {
-  width: 30%;
-  right: -41px;
+  /* width: 30%;
+  right: -41px; */
+}
+.tab-image {
+  height: 240px;
+  width: 100%;
 }
 /* - Buttons Color Scheme
 ------------------------------------------------------------- */
@@ -1566,19 +1570,23 @@ body.nav-active .nav__list-item:nth-child(10) {
   position: relative;
 }
 .main-slider .banner-content {
+  display: flex;
+  justify-content: center;
   position: absolute;
-  top: 0;
+  /* top: 0; */
   right: 0;
   left: 0;
-  width: 50%;
+  bottom: 0;
+  width: 100%;
   text-align: center;
   margin: 0 auto;
   margin-top: 300px;
+  background-color: #1414148c;
 }
 .main-slider .banner-content h2.banner-title {
   font-family: var(--heading-font);
-  font-size: 5em;
-  font-weight: 800;
+  font-size: 1em;
+  font-weight: 700;
   color: #fff;
   text-transform: uppercase;
 }
@@ -1614,7 +1622,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 
 @media only screen and (max-width: 1399px) {
   .main-slider .banner-content h2.banner-title {
-    font-size: 4.5em;
+    font-size: 2.5em;
   }
 }
 
@@ -1623,7 +1631,7 @@ body.nav-active .nav__list-item:nth-child(10) {
     margin-top: 150px;
   }
   .main-slider .banner-content h2.banner-title {
-    font-size: 4em;
+    font-size: 2em;
   }
 }
 
@@ -1632,19 +1640,19 @@ body.nav-active .nav__list-item:nth-child(10) {
     margin-top: 100px;
   }
   .main-slider .banner-content h2.banner-title {
-    font-size: 3.5em;
+    font-size: 1.5em;
   }
 }
 
 @media only screen and (max-width: 876px) {
   .main-slider .banner-content h2.banner-title {
-    font-size: 3em;
+    font-size: 1em;
   }
 }
 
 @media only screen and (max-width: 768px) {
   .main-slider .banner-content h2.banner-title {
-    font-size: 3em;
+    font-size: 1em;
   }
   #intro .button-container {
     bottom: 0;
@@ -1683,12 +1691,20 @@ body.nav-active .nav__list-item:nth-child(10) {
     height: auto;
   }
 }
+.vision-img {
+  background-color: #e85c1e;
+  padding: 28px 0;
+}
 /*----- Services Section
 --------------------------------------------------------------*/
 .services-item {
   position: relative;
   margin-top: 60px;
   margin-right: 100px;
+}
+.services-item img {
+  height: 210px;
+  width: 100%;
 }
 .services-item:last-child {
   margin-right: 0;
@@ -2311,7 +2327,10 @@ footer#footer {
     font-size: 1.8em;
   }
 }
-
+.post-image {
+  height: 210px;
+  width: 100%;
+}
 /*====================================================================*/
 /* 6. BLOG STYLES */
 /*====================================================================*/
