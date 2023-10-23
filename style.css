@@ -696,6 +696,9 @@ fieldset[disabled] a.btn {
 /* button with line */
 .btn-with-line {
   color: #fff;
+  text-decoration: none;
+  font-size: 12px;
+  line-height: 0.5;
   /* position: relative; */
 }
 /* .btn-with-line:after {
@@ -1588,7 +1591,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   font-size: 1em;
   font-weight: 700;
   color: #fff;
-  text-transform: uppercase;
+  /* text-transform: uppercase; */
 }
 #intro .button-container {
   display: flex;
@@ -1597,12 +1600,12 @@ body.nav-active .nav__list-item:nth-child(10) {
   right: 0;
 }
 #intro .button-container button.slick-arrow {
-  font-size: 1.6em;
+  font-size: 1em;
   line-height: 0;
   font-weight: 900;
   color: #fff;
-  background: var(--dark-color);
-  padding: 20px;
+  background: transparent;
+  padding: 15px;
   margin: 0;
 }
 #intro .button-container button.slick-arrow:hover,
@@ -1664,7 +1667,7 @@ body.nav-active .nav__list-item:nth-child(10) {
     margin-top: 180px;
   }
   .main-slider .banner-content {
-    width: 90%;
+    /* width: 90%; */
   }
   .main-slider .slider-item {
     height: 500px;
@@ -1693,7 +1696,7 @@ body.nav-active .nav__list-item:nth-child(10) {
 }
 .vision-img {
   background-color: #e85c1e;
-  padding: 28px 0;
+  padding: 28px;
 }
 /*----- Services Section
 --------------------------------------------------------------*/
