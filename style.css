@@ -1,12 +1,11 @@
-------------------------------------------------*/
-
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Oswald:wght@200;300;400;500;600;700&family=Roboto+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 /*--------------------------------------------------------------
 /** 1. VARIABLES
 --------------------------------------------------------------*/
 :root {
   /* widths for rows and containers
      */
-  --header-height: 160px;
+  --header-height: 90px;
   --header-height-min: 80px;
 }
 /* on mobile devices below 600px
@@ -28,9 +27,9 @@
 }
 /* Fonts */
 :root {
-  --body-font: "Roboto", sans-serif;
-  --heading-font: "Montserrat", sans-serif;
-  --secondary-font: "Playfair Display", Georgia, serif;
+  --body-font: "Roboto Condensed", sans-serif;
+  --heading-font: "Oswald", sans-serif;
+  --secondary-font: "Roboto Condensed", sans-serif;
 }
 
 /*----------------------------------------------*/
@@ -139,7 +138,23 @@ img {
 figure.align-right {
   margin: 30px 0 30px 30px;
 }
-
+#bg-text {
+  /* font-size: 22px; */
+  color: #fff;
+  letter-spacing: 2px;
+  background-color: #879b88;
+  padding: 8px;
+  /* font-weight: 600; */
+  display: inline-block;
+}
+.services-item p {
+  margin-bottom: 0;
+}
+.services-item ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  list-style-type: circle;
+}
 /* Typography */
 /*----------------------------------------------*/
 
@@ -852,21 +867,12 @@ fieldset[disabled] a.btn {
   font-weight: 900;
 }
 .section-header .title span {
-  font-size: 14px;
-  color: #afafaf;
+  font-size: 18px;
+  color: #000;
   letter-spacing: 2px;
   text-transform: uppercase;
   padding-left: 30px;
-  position: relative;
-}
-.section-header span:before {
-  content: "";
-  border-bottom: 2px solid var(--accent-color);
-  position: absolute;
-  top: 9px;
-  left: 3px;
-  width: 14px;
-  align-items: center;
+  font-weight: 500;
 }
 
 /* - Section Padding
@@ -1568,7 +1574,7 @@ body.nav-active .nav__list-item:nth-child(10) {
   position: relative;
 }
 .main-slider .slick-slide {
-  height: 90vh;
+  height: 100vh;
 }
 .main-slider .slider-item {
   position: relative;
@@ -1675,10 +1681,13 @@ body.nav-active .nav__list-item:nth-child(10) {
   }
   .main-slider .slider-item img {
     height: 100%;
-    max-width: fit-content;
+    /* max-width: fit-content; */
   }
 }
-
+.main-slider .slider-item img {
+  height: 100%;
+  max-width: fit-content;
+}
 /*----- About us Section
 --------------------------------------------------------------*/
 #about figure {
@@ -1699,10 +1708,9 @@ body.nav-active .nav__list-item:nth-child(10) {
   background-color: #e85c1e;
   padding: 28px;
 }
-@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap");
 .vision-img h1 {
   color: #fff;
-  font-family: "Dancing Script", cursive;
+  font-family: "Oswald", sans-serif;
   font-weight: 400;
 }
 /*----- Services Section
@@ -2443,7 +2451,7 @@ footer#footer {
   overflow: hidden;
 }
 .team .member .pic img {
-  height: 420px;
+  height: 360px;
   width: 100%;
 }
 .team .member .member-info {
@@ -2580,7 +2588,12 @@ footer#footer {
   z-index: 1;
   margin-bottom: 60px;
 }
-
+.team .sec-title {
+  margin-bottom: 0;
+}
+.team .btn-box {
+  margin: 18px;
+}
 .sec-title .title {
   position: relative;
   display: block;
