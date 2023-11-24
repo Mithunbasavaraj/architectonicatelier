@@ -1116,9 +1116,9 @@ nav#navbar ul.menu-list {
 --------------------------------------------------------------*/
 #navbar ul.dropdown-menu {
   position: absolute;
-  top: 120px;
+  top: 80px;
   background: #fff;
-  width: 240px;
+  width: 140px;
   margin-left: 0;
   margin-top: 0;
   border: 1px solid #d1d1d1;
@@ -1131,6 +1131,8 @@ nav#navbar ul.menu-list {
 #navbar ul.dropdown-menu li a {
   padding: 12px 20px;
   line-height: 1.5em;
+  color: #879b88;
+  font-weight: 600;
 }
 #navbar .nav-item.dropdown:hover ul.dropdown-menu {
   display: block;
@@ -1409,13 +1411,7 @@ header.sticky #navbar ul.menu-list > li > a {
   font-weight: 900;
   line-height: 1.15;
   letter-spacing: 3px;
-  -webkit-transform: translate(100px, 0%);
-  transform: translate(100px, 0%);
-  -webkit-transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.2s ease, -webkit-transform 0.3s ease;
-  transition: opacity 0.2s ease, transform 0.3s ease;
-  transition: opacity 0.2s ease, transform 0.3s ease,
-    -webkit-transform 0.3s ease;
+
   margin-top: 0;
   margin-bottom: 0;
 }
@@ -1431,8 +1427,6 @@ header.sticky #navbar ul.menu-list > li > a {
   z-index: 2;
   display: inline-block;
   text-transform: uppercase;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
 }
 .nav__list-item a:after {
   position: absolute;
@@ -1445,8 +1439,6 @@ header.sticky #navbar ul.menu-list > li > a {
   opacity: 0;
   background-color: var(--accent-color);
   z-index: 1;
-  -webkit-transition: all 200ms linear;
-  transition: all 200ms linear;
 }
 .nav__list-item a:hover:after {
   height: 4px;
@@ -1466,6 +1458,14 @@ header.sticky #navbar ul.menu-list > li > a {
   left: 0;
   width: 100%;
 }
+/*****************/
+
+.nav__list-item-1 {
+  font-size: 12px;
+  list-style: none;
+  font-weight: 400;
+}
+
 body.nav-active .nav__content {
   visibility: visible;
 }
@@ -2451,7 +2451,7 @@ footer#footer {
   overflow: hidden;
 }
 .team .member .pic img {
-  height: 360px;
+  height: 300px;
   width: 100%;
 }
 .team .member .member-info {
@@ -2840,4 +2840,88 @@ footer#footer {
   padding: 14px;
   height: 280px;
   width: 100%;
+}
+/* .yt-section .video-box {
+  background: url("/images/you1.jpg") center center no-repeat;
+  background-size: cover;
+  min-height: 200px;
+} */
+
+.yt-section .play-btn {
+  width: 94px;
+  height: 94px;
+  background: radial-gradient(#ff5821 50%, rgba(255, 88, 33, 0.4) 52%);
+  border-radius: 50%;
+  display: block;
+  position: absolute;
+  left: calc(50% - 47px);
+  top: calc(50% - 47px);
+  overflow: hidden;
+}
+
+.yt-section .play-btn::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 100;
+  transition: all 400ms cubic-bezier(0.55, 0.055, 0.675, 0.19);
+}
+
+.yt-section .play-btn::before {
+  content: "";
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  animation-delay: 0s;
+  animation: pulsate-btn 2s;
+  animation-direction: forwards;
+  animation-iteration-count: infinite;
+  animation-timing-function: steps;
+  opacity: 1;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 88, 33, 0.7);
+  top: -15%;
+  left: -15%;
+  background: rgba(198, 16, 0, 0);
+}
+
+.yt-section .play-btn:hover::after {
+  border-left: 15px solid #ff5821;
+  transform: scale(20);
+}
+
+.yt-section .play-btn:hover::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translateX(-40%) translateY(-50%);
+  width: 0;
+  height: 0;
+  border: none;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 15px solid #fff;
+  z-index: 200;
+  animation: none;
+  border-radius: 0;
+}
+
+@keyframes pulsate-btn {
+  0% {
+    transform: scale(0.6, 0.6);
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(1, 1);
+    opacity: 0;
+  }
 }
